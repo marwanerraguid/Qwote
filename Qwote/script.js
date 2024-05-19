@@ -7,13 +7,13 @@ const x = document.getElementById("x");
 fetchData();
 async function fetchData() {
 	try {
-		const response = await fetch("https://animechan.xyz/api/random");
+		const response = await fetch("https://api.quotable.io/random");
 		if (!response.ok) {
 			throw new Error("Erreur de récupérations des données");
 		}
 		const data = await response.json();
-		qwote.textContent = data.quote;
-		character.textContent = data.character;
+		qwote.textContent = data.content;
+		character.textContent = data.author;
 		anime.textContent = data.anime;
 	} catch (error) {
 		console.log(error);

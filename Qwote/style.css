@@ -36,6 +36,11 @@ main {
 	margin: 10px auto;
 }
 
+.logo img {
+	margin-top: 20px;
+	width: 300px;
+}
+
 .info {
 	margin: 30px 0;
 	text-align: end;
